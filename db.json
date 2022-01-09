@@ -1,0 +1,54 @@
+{
+  "todos": [
+    {
+      "completed": false,
+      "name": "Call my mom",
+      "dueDate": "28/11/2021",
+      "user_id": 1,
+      "id": 1
+    },
+    {
+      "completed": true,
+      "name": "Do homework",
+      "dueDate": "28/11/2021",
+      "user_id": 1,
+      "id": 3
+    },
+    {
+      "completed": true,
+      "name": "Studiare",
+      "dueDate": "5/12/2021",
+      "user_id": 1,
+      "id": 4
+    },
+    {
+      "completed": false,
+      "name": "Fare codici",
+      "dueDate": "17/12/2021",
+      "user_id": 1,
+      "id": 5
+    }
+  ],
+  "filter": [
+    "ALL"
+  ],
+  "lists": [
+    {
+      "name": "Supermarket",
+      "created_at": "2021-08-30 12:12",
+      "user_id": 1,
+      "id": 1
+    },
+    {
+      "name": "School",
+      "created_at": "2021-08-30 12:12",
+      "user_id": 1,
+      "id": 2
+    },
+    {
+      "name": "Test",
+      "user_id": 1,
+      "id": 3
+    }
+  ]
+}
