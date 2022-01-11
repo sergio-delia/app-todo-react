@@ -5,6 +5,7 @@
       "name": "Call my mom",
       "dueDate": "28/11/2021",
       "user_id": 1,
+      "list_id": 1,
       "id": 1
     },
     {
@@ -12,6 +13,7 @@
       "name": "Do homework",
       "dueDate": "28/11/2021",
       "user_id": 1,
+      "list_id": 2,
       "id": 3
     },
     {
@@ -19,6 +21,7 @@
       "name": "Studiare",
       "dueDate": "5/12/2021",
       "user_id": 1,
+      "list_id": 1,
       "id": 4
     },
     {
@@ -26,7 +29,23 @@
       "name": "Fare codici",
       "dueDate": "17/12/2021",
       "user_id": 1,
+      "list_id": 1,
       "id": 5
+    },
+    {
+      "completed": true,
+      "name": "Mangiare",
+      "created_at": "9/1/2022",
+      "user_id": 1,
+      "id": 6
+    },
+    {
+      "completed": false,
+      "name": "Test todo",
+      "created_at": "11/1/2022",
+      "user_id": 1,
+      "list_id": 3,
+      "id": 7
     }
   ],
   "filter": [

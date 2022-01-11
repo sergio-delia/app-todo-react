@@ -1,28 +1,25 @@
-import {toggleTodo, removeTodos} from './todos/todosSlice';
-import { useDispatch } from 'react-redux';
 import Todo from './todos/Todo';
 
 
-export const Todos = ({todos}) => {
+export const Todos = ({todos, removeTodo, updateTodo}) => {
 
-    const dispatch = useDispatch();
     
     const onRemove = (todo) => {
-        dispatch(removeTodos(todo))
+        removeTodo(todo.id)
     }
 
     const onToggle = async (todo) => {
         const newTodo = {...todo,completed:!todo.completed}
         try {
 
-        const res= await dispatch(toggleTodo(newTodo)).unwrap();
+        const res= await updateTodo(newTodo).unwrap();
 
         } catch(e){
             console.log(e);
         } 
     }
     return(
-        <ul className="list-group list-group-flush">
+        <ul className="list-group list-group-flush" id="TodoList">
 
       {todos.map(todo => <Todo key={todo.id} todo={todo} onToggleToDo={onToggle} onRemoveToDo={onRemove} />)}
 

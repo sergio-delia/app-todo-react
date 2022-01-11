@@ -1,5 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit';
-import { getTodos, removeTodos, addTodo, toggleTodo } from './thunksTodo';
+import { getTodos, removeTodos, addTodo, toggleTodo } from './thunksTodo_PRE_RTK';
 
 /*
 const initTodos = [

@@ -15,14 +15,14 @@ const Lists = () => {
   /* FINE FUNZIONE ELIMINAZIONE LISTE */
 
 
-    /* FUNZIONE ELIMINAZIONE LISTE TRAMITE RTK QUERY */
+    /* FUNZIONE INSERIMENTO LISTE TRAMITE RTK QUERY */
   const [addList, {isLoading:isAdding, isSuccess:isAddSuccess, error:addError, isError:isAddError}] = useAddListsMutation();
-    /* FINE FUNZIONE ELIMINAZIONE LISTE */
+    /* FINE FUNZIONE INSERIMENTO LISTE */
 
 
-      /* FUNZIONE ELIMINAZIONE LISTE TRAMITE RTK QUERY */
+      /* FUNZIONE AGGIORNAMENTO LISTE TRAMITE RTK QUERY */
   const [updateList, {isLoading:isUpdating, isSuccess:isUpdSuccess, error:updateError, isError:isUpdateError}] = useUpdateListMutation();
-       /* FINE FUNZIONE ELIMINAZIONE LISTE */
+       /* FINE FUNZIONE AGGIORNAMENTO LISTE */
 
 
     /* IMPORTAZIONE LISTE */
@@ -64,7 +64,7 @@ const Lists = () => {
       <>
       <h1>Le mie liste</h1>
       <AddList listEle={listEle} manageClick={manageClick} />
-        <ul className="list-group list-group-flush">
+        <ul className="list-group list-group-flush" id="ListList">
       {lists.map(list => <List onRemoveList={removeList}
       /* NEL CASO IN CUI NON USASSIMO GLI INVALIDTAGS
       onRemoveList={ (id)=>{

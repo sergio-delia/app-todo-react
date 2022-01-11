@@ -1,12 +1,13 @@
 import PropTypes from 'prop-types';
+import {NavLink} from 'react-router-dom';
 
 const List = ({list, onRemoveList}) => {
 
     return (
         <li className="list-group-item d-flex justify-content-between">
-            <span>
+            <NavLink to={'/list/'+ list.id + '/todos?list_name='+ encodeURIComponent(list.name)}>
                 {list.name}
-            </span>
+            </NavLink>
             <button className="btn btn-danger btn-sm" onClick={onRemoveList.bind(null, list.id)}>
             <li className="bi bi-trash"></li> 
             </button>
